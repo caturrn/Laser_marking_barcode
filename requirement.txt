@@ -1,0 +1,4 @@
+keyboard==0.13.5
+pywin32==304
+six==1.16.0
+winshell==0.6

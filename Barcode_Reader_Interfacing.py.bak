@@ -1,0 +1,28 @@
+import msvcrt, time
+
+
+# flag= [0,0]
+# text = ""
+while True:
+    flag= [0,0]
+    text = ""
+    while True:
+        flag_item = msvcrt.kbhit()
+        if(msvcrt.kbhit()):
+            letter = msvcrt.getwch()
+            text += letter
+        flag.append(flag_item)
+        flag.pop(0)
+        if(flag[0]>flag[1]):
+            break
+        #print(flag)
+        time.sleep(.02)
+    print(text)
+    text = ""
+    print("OK")
+
+
+
+3275082-0
+5641062-1
+0005996050
